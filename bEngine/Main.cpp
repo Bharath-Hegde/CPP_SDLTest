@@ -9,7 +9,7 @@
 
 	//SDL_Texture* loadTexture(const std::string &fp, SDL_Renderer *ren)
 
-	void Log_SDLError(std::ostream &stream, std::string msg) //originally an address reference (&msg). Possible problems.?
+	void Log_SDLError(std::ostream &stream, std::string &msg) //originally an address reference (&msg). Possible problems.?
 	{
 			stream << msg << "SDL Error: " << SDL_GetError() << std::endl;
 	}
